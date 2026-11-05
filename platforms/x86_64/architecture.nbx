@@ -1,0 +1,19 @@
+// Definicoes fundamentais da arquitetura x86_64.
+
+// Largura dos registradores gerais e da representacao dos ponteiros.
+publico constante LARGURA_REGISTRADOR_GERAL_BITS: inteiro_u32 = 64
+publico constante LARGURA_PONTEIRO_BITS: inteiro_u32 = 64
+publico constante TAMANHO_PONTEIRO_BYTES: inteiro_u32 = 8
+
+// Pagina convencional de 4 KiB utilizada pela arquitetura x86_64.
+publico constante TAMANHO_PAGINA_4_KIB_BYTES: inteiro_u64 = 4096
+publico constante DESLOCAMENTO_PAGINA_4_KIB_BITS: inteiro_u32 = 12
+
+// Tipos distintos evitam misturar enderecos fisicos e virtuais por engano.
+publico estrutura EnderecoFisico {
+    valor: inteiro_u64
+}
+
+publico estrutura EnderecoVirtual {
+    valor: inteiro_u64
+}
