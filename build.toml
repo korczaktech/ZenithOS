@@ -1,0 +1,12 @@
+[build]
+target = "x86_64-unknown-none"
+bootloader = "boot/zbl"
+kernel = "kernel"
+output = "build"
+
+[artifacts]
+bootloader = "BOOTX64.EFI"
+kernel = "zenith.elf"
+
+# Este arquivo registra a configuração pretendida; o formato deverá ser
+# integrado ao build system Nebula quando a toolchain estiver especificada.

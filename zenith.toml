@@ -1,0 +1,16 @@
+[project]
+name = "ZenithOS"
+version = "0.0.1"
+architecture = "x86_64"
+firmware = "uefi"
+language = "nebula"
+kernel = "monolithic-modular"
+
+[boot]
+loader = "ZBL"
+kernel_format = "ELF64"
+firmware_format = "PE32+"
+
+[testing]
+emulator = "QEMU"
+disk_format = "raw"
