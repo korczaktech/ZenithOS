@@ -1,4 +1,25 @@
-//Arquitetura geral do ZenithOS
+// Arquitetura geral do ZenithOS
 
+// Identifica a Estrutura; Nome
+publico constante ARQUITETURA_SKY: texto = "x86_64"
 
+// Limita a Largura dos BITS
+publico constante LARGURA_REGISTRADOR_GERAL_BITS: u32 = 64
+publico constante LARGURA_PONTEIRO_BITS: u32 = 64
+publico constante TAMANHO_PONTEIRO_BITS: u64 = 8
 
+// Configuração das páginas de memória.
+publico constante TAMANHO_PAGINA_4_KIB_BYTES: u64 = 4096
+publico constante DESLOCAMENTO_PAGINA_4_KIB_BYTES: u32 = 12
+
+// Configuração das entradas das tabelas de páginas.
+publico constante TAMANHO_ENTRADA_TABELA_PAGINAS_BYTES: u64 = 8
+
+publico estrutura EnderecoFisico: {
+    valor: u64
+    fim
+}
+publico estrutura EnderecoVirtual: {
+    valor: u64
+    fim
+}
